@@ -31,7 +31,7 @@ function showCharacter(character) {
         <article class="grid-item">
             <img src="${character.image}">
             <h2>${character.name}</h2>
-            <p>${character.age + " " + "years old"}</p>
+            <p>${character.age} Years Old</p>
         </article>
         `;
     
