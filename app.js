@@ -51,7 +51,7 @@ function showCharacterModal(character) {
 
     // Cacth Phrase and Name
     document.querySelector("#dialog-name").textContent = character.name;
-    document.querySelector("#dialog-quote").textContent = character.catchPhrase;
+    document.querySelector("#dialog-quote").textContent = `"${character.catchPhrase}"`;
 
     // Info
      dialog.querySelector("#dialog-nickname").textContent = character.nickname;
