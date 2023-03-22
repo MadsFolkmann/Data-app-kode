@@ -1,21 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SouthParkData</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-    <h1>South Park Characters</h1>
+      <h1>South Park Characters</h1>
     </header>
 
     <main>
- <section id="southParkCharacter" class="grid_container"></section>
+      <section id="character" class="grid_container"></section>
     </main>
-    
+
+    <dialog id="dialog-character">
+      <article id="dialog-grid">
+        <div>
+          <h2><span id="dialog-name"></span></h2>
+          <p id="dialog-quote"></p>
+          <figure><img id="dialog-image" src="billede/RANDY-MARSH-quotes-internet-porn (2).jpg" alt="" /></figure>
+        </div>
+        <div id="dialog-info">
+          <h3>Character Info</h3>
+          <ul>
+            <li>Nickname: <span id="dialog-nickname"></span></li>
+            <br />
+            <li>Occupation: <span id="dialog-occupation"></span></li>
+            <br />
+            <li>Age: <span id="dialog-age"></span></li>
+            <br />
+            <li>Voiced By: <span id="dialog-voicedby"></span></li>
+            <br />
+            <li>Gender: <span id="dialog-gender"></span></li>
+            <br />
+            <li>Hair color: <span id="dialog-haircolor"></span></li>
+            <br />
+            <li>Religion: <span id="dialog-religion"></span></li>
+            <br />
+            <li>School grade: <span id="dialog-grade"></span></li>
+            <br />
+            <li>Episodes: <span id="dialog-episodes"></span></li>
+            <br />
+            <li>Appearances: <span id="dialog-appearances"></span></li>
+            <br />
+            <li>First appearance: <span id="dialog-firstappearance"></span></li>
+          </ul>
+        </div>
+      </article>
+        <form method="dialog">
+        <button id="btn_cancel">Close</button>
+      </form>
+    </dialog>
+
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
