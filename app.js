@@ -2,26 +2,23 @@
 
 window.addEventListener("load", initApp)
 
-function initApp() {
-  const randyMarsh = {
-    name: "Randy Marsh",
-    nickname: "Steamy Ray Vaughn, Lorde, The Amazingly Randy, N- Word Guy, Karen",
-    image: "billede/RANDY-MARSH-quotes-internet-porn (2).jpg",
-    occupation: "Weed farmer, former Geologist and cocaine farmer",
-    age: 45,
-    voiceBy: "Trey Park",
-    gender: "Male",
-    religion: "Roman Catholic, Mormonism (formerly), Atheist (formerly)",
-    catchPhrase: "I'm sorry, I thought this was America!",
-    hairColor: "Black",
-    schoolGrade: "Genius",
-    episodes: "1 mil",
-    appearances: "Infinite",
-      firstAppearance: "Volcano S01E03",
-    };
+async function initApp() {
+  const randyMarsh =  await getCharacter("data/randy.json");
     
     showCharacter(randyMarsh);
+    showCharacter(randyMarsh);
+    showCharacter(randyMarsh);
+    showCharacter(randyMarsh);
 }
+
+
+async function getCharacter(url) {
+    const response = await fetch(url);
+    const data = await response.json();
+    return data;
+}
+      
+
 
 function showCharacter(character) {
     
