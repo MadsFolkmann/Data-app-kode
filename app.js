@@ -3,12 +3,12 @@
 window.addEventListener("load", initApp)
 
 async function initApp() {
-  const randyMarsh =  await getCharacter("data/randy.json");
-    
+    const randyMarsh =  await getCharacter("data/randy.json");
+    const heatherSwanson = await getCharacter("https://raw.githubusercontent.com/Benjamin-Harris1/Data-app/main/JSON/heather.json");
     showCharacter(randyMarsh);
+    showCharacter(heatherSwanson);
     showCharacter(randyMarsh);
-    showCharacter(randyMarsh);
-    showCharacter(randyMarsh);
+    showCharacter(heatherSwanson);
 }
 
 
