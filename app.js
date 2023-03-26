@@ -5,10 +5,40 @@ window.addEventListener("load", initApp)
 async function initApp() {
     const randyMarsh =  await getCharacter("data/randy.json");
     const jimmyValmer = await getCharacter("https://raw.githubusercontent.com/Forkeh/South-Park-App/main/data/jimmy.json");
+    const kyleBroflovski = await getCharacter("https://raw.githubusercontent.com/fili0727/Data-opgave/main/kyle.json");
+    const tolkien = await getCharacter("https://raw.githubusercontent.com/Abdiox/South-park1/main/Data/southPark.json");
+    const butters = await getCharacter("https://raw.githubusercontent.com/Asbjoernemil/data-assignment/main/data/characters.json");
+    const timmyBurch = await getCharacter("https://raw.githubusercontent.com/AeselCSS/data-project/main/assets/data/timmy.json");
+    const ericCartman = await getCharacter("https://raw.githubusercontent.com/Bindholt/Data-Projekt/main/data/cartman.json");
+    const luKim = await getCharacter("https://raw.githubusercontent.com/TheDanishMexican/object-south-park/main/data/app.json");
+    const chef = await getCharacter("https://raw.githubusercontent.com/emilvn/data-fetch-assignment/main/data/southpark.json");
+    const mackey = await getCharacter("https://raw.githubusercontent.com/MaxusTheOne/data_project/main/data/mrMackey.json");
+    const christina = await getCharacter("https://raw.githubusercontent.com/Maltemork/south-park-app/main/data/christinaAguilera.json");
+    const wendy = await getCharacter("https://raw.githubusercontent.com/osman-butt/data-app/main/wendy.json");
+    const kenny = await getCharacter("https://raw.githubusercontent.com/Mart0808DK/Data-fetch-projekt/main/kenny.json");
+    const kennedy = await getCharacter("https://raw.githubusercontent.com/rarogbennu/SP/master/data/jfk.json");
+    const stan = await getCharacter("https://raw.githubusercontent.com/VARattleff/south-park-viktor/main/sp.json");
+    const jackTenorman = await getCharacter("https://raw.githubusercontent.com/YawHB/South_Park_Project/main/data/jack.json");
+    const parisHilton = await getCharacter("https://raw.githubusercontent.com/Tunafan/southpark_db/main/South%20Park%20db/data/paris.json");
+    const heatherSwamson = await getCharacter("https://raw.githubusercontent.com/Benjamin-Harris1/Data-app/main/data/heather.json");
     showCharacter(randyMarsh);
     showCharacter(jimmyValmer);
-    showCharacter(randyMarsh);
-    showCharacter(jimmyValmer);
+    showCharacter(kyleBroflovski);
+    showCharacter(tolkien);
+    showCharacter(butters);
+    showCharacter(timmyBurch);
+    showCharacter(ericCartman);
+    showCharacter(luKim);
+    showCharacter(chef);
+    showCharacter(mackey);
+    showCharacter(christina);
+    showCharacter(wendy);
+    showCharacter(kenny);
+    showCharacter(kennedy);
+    showCharacter(stan);
+    showCharacter(jackTenorman);
+    showCharacter(parisHilton);
+    showCharacter(heatherSwamson);
 }
 
 
@@ -58,7 +88,7 @@ function showCharacterModal(character) {
      dialog.querySelector("#dialog-haircolor").textContent = character.hairColor;
      dialog.querySelector("#dialog-religion").textContent = character.religion;
      dialog.querySelector("#dialog-grade").textContent = character.schoolGrade;
-     dialog.querySelector("#dialog-voicedby").textContent = character.voiceBy;
+     dialog.querySelector("#dialog-voicedby").textContent = character.voicedBy;
      dialog.querySelector("#dialog-episodes").textContent = character.episodes;
      dialog.querySelector("#dialog-appearances").textContent = character.appearances;
     dialog.querySelector("#dialog-firstappearance").textContent = character.firstAppearance;
