@@ -128,14 +128,19 @@ main {
 .grid-item {
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
     padding: 0.5em;
-    background-color: var(--white);
+    background-color: #9c6c56a4;
+    /* background-color: rgba(255, 255, 255, 0.244); */
     transition: 0.5s;
     animation: fadeIn 0.5s;
     cursor: pointer;
+    border-radius: 2%;
+    color: black;
 }
 
+
+
 .grid-item:hover {
-    box-shadow: 0 8px 16px 0 var(--green);
+    box-shadow: 0 16px 32px 0 var(--green);
 }
 
 .grid-item img {
@@ -204,8 +209,11 @@ input {
 dialog {
     border-color: #c5886c;
     background-color: #9C6C56;
+    color: rgb(33, 31, 31);
     width: 65vw;
     padding: 2em 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 dialog::backdrop {
@@ -217,12 +225,16 @@ dialog::backdrop {
     grid-template-columns: 1fr 1fr;
 }
 
-dialog h4 {
-    margin-bottom: 0;
+dialog h2 {
+    font-size: 1.4em;
+}
+dialog h3 {
+    font-size: 1.1em;
 }
 dialog ul {
     margin: 0.5em 0 1em;
     padding-inline-start: 1.5em;
+    font-size: 0.8em;
 }
 
 dialog p {
@@ -230,7 +242,7 @@ dialog p {
 
 }
 dialog img {
-    width: 60%;
+    width: 80%;
     height: auto;
 
 }
