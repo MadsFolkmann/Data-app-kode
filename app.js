@@ -6,6 +6,9 @@ async function initApp() {
    
     const allCharacters = await getCharacter("data/allCharacters.json");
    allCharacters.forEach(showCharacter);
+    // for (const character of allCharacters){
+    //     showCharacter(character);
+    // }
 }
 
 
