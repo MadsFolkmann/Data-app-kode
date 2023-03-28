@@ -164,7 +164,7 @@ main {
 /* input form styling */
 form {
     margin: 2em auto 0;
-    background-color: var(--light-green);
+    background-color: #9C6C56;
     padding: 1em 1em 2em;
     text-align: center;
 }
@@ -177,7 +177,7 @@ button {
     border: none;
     border-radius: 0;
     color: var(--text-color-light);
-    background-color: var(--green);
+    background-color: rgb(79, 77, 77);
     letter-spacing: 0.05em;
     text-transform: uppercase;
     padding: 0.5em 1em;
@@ -198,8 +198,8 @@ input {
 /* ---------- dialog styling ---------- */
 
 dialog {
-    border-color: var(--green);
-    background-color: var(--light-green);
+    border-color: #c5886c;
+    background-color: #9C6C56;
     width: 45vw;
     padding: 2em 1em;
 }
