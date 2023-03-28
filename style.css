@@ -175,7 +175,7 @@ button {
     font-size: 1em;
     text-align: center;
     cursor: pointer;
-    border: none;
+    border: 1px solid rgb(94, 85, 85);
     border-radius: 0;
     color: var(--text-color-light);
     background-color: rgb(79, 77, 77);
@@ -184,6 +184,9 @@ button {
     padding: 0.5em 1em;
     width: 100%;
     max-width: 380px;
+}
+button:hover {
+    box-shadow: 0 8px 16px 0 rgb(79, 77, 77);
 }
 
 input {
@@ -201,7 +204,7 @@ input {
 dialog {
     border-color: #c5886c;
     background-color: #9C6C56;
-    width: 45vw;
+    width: 65vw;
     padding: 2em 1em;
 }
 
@@ -221,12 +224,13 @@ dialog ul {
     margin: 0.5em 0 1em;
     padding-inline-start: 1.5em;
 }
+
 dialog p {
     margin: 0.5em 0 1em;
+
 }
 dialog img {
     width: 60%;
     height: auto;
-    align-items: center;
-    text-align: center;
+
 }
