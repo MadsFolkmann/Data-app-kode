@@ -4,8 +4,8 @@ window.addEventListener("load", initApp)
 
 async function initApp() {
    
-    const students = await getCharacter("data/allCharacters.json");
-   students.forEach(showCharacter);
+    const allCharacters = await getCharacter("data/allCharacters.json");
+   allCharacters.forEach(showCharacter);
 }
 
 

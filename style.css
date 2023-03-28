@@ -67,8 +67,8 @@ header {
 /* ---------- footer styling ---------- */
 
 footer {
-    background-color: var(--green);
-    color: var(--text-color-light);
+    background-color: #9C6C56;
+    color: black;
     padding: 1em;
     text-align: center;
 }
