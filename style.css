@@ -128,8 +128,8 @@ main {
 .grid-item {
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
     padding: 0.5em;
+    margin-top: 2em;
     background-color: #9c6c56a4;
-    /* background-color: rgba(255, 255, 255, 0.244); */
     transition: 0.5s;
     animation: fadeIn 0.5s;
     cursor: pointer;
