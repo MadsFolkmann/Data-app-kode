@@ -11,9 +11,29 @@
     <header>
       <h1>South Park Characters</h1>
     </header>
-
+    
     <main>
-      <section id="character" class="grid-container"></section>
+        <article>
+        <button id="button_change_display">Change to Table</button>
+        </article>
+        <section id="character" class="grid-container"></section>
+
+      <section class="hidden" id="table">
+            
+            <table>
+                <thead>
+                    <tr>
+                        <td>Image</td>
+                        <td>Name</td>
+                        <td>Nickname</td>
+                        <th>Gender</th>
+                        <td>Age</td>
+                        <th>Occupation</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </section>
     </main>
 
     <dialog id="dialog-character">

@@ -2,13 +2,31 @@
 
 window.addEventListener("load", initApp)
 
+let showingGrid;
+
 async function initApp() {
    
     const allCharacters = await getCharacter("data/allCharacters.json");
-   allCharacters.forEach(showCharacter);
-    // for (const character of allCharacters){
-    //     showCharacter(character);
-    // }
+    showAllCharacters(allCharacters)
+    
+    showingGrid = true;
+    document.querySelector("#button_change_display").addEventListener("click", changeDisplay);
+}
+
+function changeDisplay() {
+    console.log(showingGrid)
+    if (showingGrid) {
+        showingGrid = false;
+        console.log(showingGrid)
+        document.querySelector("#character").classList.add("hidden");
+        document.querySelector("#table").classList.remove("hidden");
+        document.querySelector("#button_change_display").textContent = "Change to Grid"
+    } else if (!showingGrid) {
+        showingGrid = true;
+        document.querySelector("#table").classList.add("hidden");
+        document.querySelector("#character").classList.remove("hidden");
+        document.querySelector("#button_change_display").textContent = "Change to Table";
+    }
 }
 
 
@@ -18,6 +36,13 @@ async function getCharacter(url) {
     return data;
 }
       
+// Create HTML and display all users from given list
+function showAllCharacters(characterList) {
+    //loop through all users and create an article with content for each
+    for (const character of characterList) {
+        showCharacter(character);
+    }
+}
 
 
 function showCharacter(character) {
@@ -35,6 +60,21 @@ function showCharacter(character) {
     document.querySelector("#character").insertAdjacentHTML("beforeend", html);
     document.querySelector("#character article:last-child").addEventListener("click", characterClicked);
         
+const htmlTable = /*html*/ `
+    <tr>
+        <td><img src=${character.image}></td>
+        <td>${character.name}</td>
+        <td>${character.nickname}</td>
+        <td>${character.gender}</td>
+        <td>${character.age}</td>
+        <td>${character.occupation}</td>
+    </tr>
+    `;
+
+document.querySelector("#tbody").insertAdjacentHTML("beforeend", htmlTable);
+document.querySelector("tbody tr:last-child").addEventListener("click", characterClicked);
+
+
     function characterClicked() {
         showCharacterModal(character);
     }
