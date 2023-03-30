@@ -1,1 +1,1 @@
-https://github.com/MadsFolkmann/Data-app-kode
+https://madsfolkmann.github.io/Data-app-kode/
