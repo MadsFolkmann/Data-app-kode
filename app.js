@@ -18,13 +18,13 @@ function changeDisplay() {
     if (showingGrid) {
         showingGrid = false;
         console.log(showingGrid)
-        document.querySelector("#character").classList.add("hidden");
+        document.querySelector("#grid").classList.add("hidden");
         document.querySelector("#table").classList.remove("hidden");
         document.querySelector("#button_change_display").textContent = "Change to Grid"
     } else if (!showingGrid) {
         showingGrid = true;
         document.querySelector("#table").classList.add("hidden");
-        document.querySelector("#character").classList.remove("hidden");
+        document.querySelector("#grid").classList.remove("hidden");
         document.querySelector("#button_change_display").textContent = "Change to Table";
     }
 }
@@ -57,8 +57,8 @@ function showCharacter(character) {
         </article>
         `;
     
-    document.querySelector("#character").insertAdjacentHTML("beforeend", html);
-    document.querySelector("#character article:last-child").addEventListener("click", characterClicked);
+    document.querySelector("#grid").insertAdjacentHTML("beforeend", html);
+    document.querySelector("#grid article:last-child").addEventListener("click", characterClicked);
         
 const htmlTable = /*html*/ `
     <tr>
