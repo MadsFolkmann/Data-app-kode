@@ -215,7 +215,7 @@ dialog {
     width: 65vw;
     padding: 2em 1em;
     margin-top: 1em;
-    margin-bottom: 1em;
+    
 }
 
 dialog::backdrop {
@@ -228,10 +228,10 @@ dialog::backdrop {
 }
 
 dialog h2 {
-    font-size: 1.4em;
+    font-size: 1em;
 }
 dialog h3 {
-    font-size: 1.1em;
+    font-size: 1em;
 }
 dialog ul {
     margin: 0.5em 0 1em;
@@ -244,7 +244,7 @@ dialog p {
 
 }
 dialog img {
-    width: 80%;
+    width: 70%;
     height: auto;
 
 }
